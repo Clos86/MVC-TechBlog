@@ -1,0 +1,46 @@
+<div class="uk-child-width-expand@s uk-text-center " uk-grid>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body ">
+      <div class="uk-margin-top">
+        <h2 class="uk-heading-line uk-text-center">Create New Post</h2>
+        <form class="new-post-form ">
+          <div class="uk-margin">
+            <div class="uk-inline">
+              <label for="post-title"></label>
+              <input type="text" id="post-title" name="post-title"
+                class="uk-padding-small uk-form-large uk-border-rounded" placeholder="Insert Title" />
+            </div>
+          </div>
+
+          <div class="uk-margin">
+            <div class="uk-inline">
+              <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: pencil"></span>
+              <label for="post-content">content</label>
+              <textarea id="post-content" class="uk-textarea uk-border-rounded" rows="10" cols="100"
+                name="post-content"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn uk-button-large uk-button-danger uk-border-rounded">CREATE</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  {{#if posts.length}}
+  <div class="uk-card uk-card-body uk-flex uk-grid-match">
+    <div class="uk-flex-center uk-remove-margin">
+      <h2 class="uk-heading-line uk-text-center">Your Posts</h2>
+      <ul>
+        {{#each posts as |post|}}
+        <li class="uk-grid-row-medium ">
+          {{> post-info post}}
+
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  {{/if}}
+</div>
+<script src="/javascript/add-post.js"></script>

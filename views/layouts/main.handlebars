@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeSpot</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/stylesheets/images/hearticon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="/" class="brand-logo uk-text-bold">SafeSpot</a></li>
+            <li class="uk-flex-right"><a href="/">GET HELP</a></li>
+            {{#if loggedIn}}
+            <li class="uk-flex-right"><a href="/dashboard">dashboard</a></li>
+            <li class="uk-flex-right"><a id="logout" href="/">logout</a></li>
+            {{else}}
+            <li class="uk-flex-right"> <a href="/login">login</a></li>
+            {{/if}}
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    {{{ body }}}
+  </main>
+
+<div class="elfsight-app-345a6adf-6df6-4ed0-8a69-bebf4f644bf3"></div>
+
+
+  <div class="footer">
+    <marquee>
+
+      Keep on shinning &emsp; &emsp; &emsp;
+      It's the will not the skill &emsp; &emsp; &emsp;
+      Don't stop until you're proud &emsp; &emsp; &emsp;
+      Be you, Do you, For you &emsp; &emsp; &emsp;
+      I accept myself as I am &emsp; &emsp; &emsp;
+      You matter &emsp; &emsp; &emsp;
+      Create your own sunshine &emsp; &emsp; &emsp;
+      Never be afraid of change &emsp; &emsp; &emsp;
+      We rise by lifting others &emsp; &emsp; &emsp;
+      No storm can last forever &emsp; &emsp; &emsp;
+      Be the reason someone smiles today &emsp; &emsp; &emsp;
+      Life is tough but so are you &emsp; &emsp; &emsp;
+      Happiness is an inside job &emsp; &emsp; &emsp;
+      You do not find the happy life. You make it. &emsp; &emsp; &emsp;
+      Make each day your masterpiece &emsp; &emsp; &emsp;
+      It is never too late to be what you might have been &emsp; &emsp; &emsp;
+      Keep going. Be all in. &emsp; &emsp; &emsp;
+      If it matters to you, you will find a way &emsp; &emsp; &emsp;
+      Turn your wounds into wisdom &emsp; &emsp; &emsp;
+      Try Again. Fail Again. Fail better. &emsp; &emsp; &emsp;
+      No greater gift there is, than a generous heart &emsp; &emsp; &emsp;
+      You never fail until you stop trying &emsp; &emsp; &emsp;
+      Whatever you do, do with all your might &emsp; &emsp; &emsp;
+      Life isn't about finding yourself. Life is about creating yourself. &emsp; &emsp; &emsp;
+
+      Keep on shinning &emsp; &emsp; &emsp; 
+      It's the will not the skill &emsp; &emsp; &emsp; 
+      Don't stop utnil you're proud &emsp; &emsp; &emsp; 
+      Be you, Do you, For you &emsp; &emsp; &emsp; 
+      I accept myself as I am &emsp; &emsp; &emsp; 
+      You matter &emsp; &emsp; &emsp; 
+      Create your own sunshine &emsp; &emsp; &emsp; 
+      Never be afraid of change &emsp; &emsp; &emsp; 
+      We rise by lifting others &emsp; &emsp; &emsp; 
+      No storm can last forever &emsp; &emsp; &emsp; 
+      Be the reason someone smiless today &emsp; &emsp; &emsp; 
+      Life is tough but so are you &emsp; &emsp; &emsp; 
+      Happiness is an inside job &emsp; &emsp; &emsp; 
+      You do not find the happy life. You make it. &emsp; &emsp; &emsp; 
+      Make each day your masterpiece &emsp; &emsp; &emsp; 
+      It is never too late to be what you might have been &emsp; &emsp; &emsp; 
+      Keep going. Be al in. &emsp; &emsp; &emsp; 
+      If it matters to you, you will find a way &emsp; &emsp; &emsp; 
+      Turn your wounds into wisdom &emsp; &emsp; &emsp; 
+      Try Again. Fail Again. Fail better. &emsp; &emsp; &emsp; 
+      No greater gift there is, than a generous heart &emsp; &emsp; &emsp; 
+      You never fail until you stop trying &emsp; &emsp; &emsp; 
+      Whatever you do, do with all your might &emsp; &emsp; &emsp; 
+      Life isn't about finding yourself. Life is about creating yourself. &emsp; &emsp; &emsp; 
+
+    </marquee>
+  </div>
+
+
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+
+</body>
+
+</html>
